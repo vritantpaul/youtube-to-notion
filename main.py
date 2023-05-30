@@ -79,7 +79,7 @@ def write_notion(url=None, title=None, notes=None, time=None):
     """Writing the summary in Notion using Notion API."""
 
     # Authorization Credentials ---
-    token = "Your Notion Token"
+    token = "Your Notion API Token"
     database_id = "Your Database ID"
 
     # Link & Headers for the POST request ---
