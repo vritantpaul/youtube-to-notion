@@ -1,1 +1,1 @@
-# youtube-video-notes-to-notion
+# youtube-video-to-notion notes
