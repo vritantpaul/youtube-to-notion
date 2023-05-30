@@ -1,0 +1,4 @@
+Summarize the given text, while following the following instructions:
+1. If any example or references are given make them short.
+2. Keep the details intact, make sure not to deviate from the original theme of the text
+Text: 
