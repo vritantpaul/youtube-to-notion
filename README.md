@@ -8,5 +8,5 @@ The whole process goes through the following steps:
 - Each sentence is then embedded using **Sentence Transformers**. Specifically using **"all-mpnet-base-v2"**.
 - Based on each sentence's cosine similarity, the algorithm identifies split points.
 - It then splits the text based on those split points. And finally concatenates the paragraphs.
-- Each of those paragraph is passed onto **Open AI API**, which then summarizes them.
+- Each of those paragraph is passed into **Open AI API**, which then summarizes them.
 - Finally all the paragraphs are written as bulleted list in Notion using **Notion API**.
