@@ -61,7 +61,7 @@ def get_time():
 
 def summarize(prompt):
     """Summarizing using open AI API."""
-    openai.api_key = "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"
+    openai.api_key = "Your OpenAI API key"
 
     response = openai.Completion.create(
         model="text-davinci-003",
@@ -79,8 +79,8 @@ def write_notion(url=None, title=None, notes=None, time=None):
     """Writing the summary in Notion using Notion API."""
 
     # Authorization Credentials ---
-    token = "secret_B4PGaQ0FIeXcpmkvy6f5lE08B2bTRQ8OyT07TC1J01"
-    database_id = "8a2257b7596947d1ae1aaa3ac310dca9"
+    token = "Your Notion Token"
+    database_id = "Your Database ID"
 
     # Link & Headers for the POST request ---
     link = "https://api.notion.com/v1/pages"
