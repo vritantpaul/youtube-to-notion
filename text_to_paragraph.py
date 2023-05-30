@@ -40,7 +40,6 @@ def consistent_sentences(sentences):
 
 
 def activate_similarities(similarities: np.array, p_size=10) -> np.array:
-    # sourcery skip: inline-immediately-returned-variable
     """
     Function returns list of weighted sums of activated sentence similarities
     Args:
@@ -106,7 +105,7 @@ def split_to_paragraphs(text):
     # IDENTIFYING SPLITS POINTS ---
     activated_similarities = activate_similarities(similarities, p_size=10)
     # FOR ALL LOCAL MINIMAS FINDING RELATIVE MINIMA OF OUR VECTOR & SAVE THEM TO VARIABLE WITH ARGRELEXTREMA FUNCTION
-    minmimas = argrelextrema(activated_similarities, np.less, order=4)
+    minmimas = argrelextrema(activated_similarities, np.less, order=2)
     # NOTE: order parameter controls how frequent should be splits. Higher the order lower the number of splits
 
     # GET THE ORDER NUMBER OF THE SENTENCES WHICH ARE IN SPLITTING POINTS
