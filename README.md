@@ -1,6 +1,7 @@
-# How it works:
+# Description
 This program will take any youtube video with subtitles, and write a summary of it in Notion.
 
+## How it works
 The whole process goes through the following steps:
 - Input video link. Upon receiving the link it will check whether the video has any subtitles. If yes, retrieve the transcript using **Youtube Transcript API**.
 - After getting the transcript, it will scrape the video title from its youtube page using **selectolax**.
